@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro">
+
+    <TextView
+        android:id="@+id/txtBoasVindas"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:height="2dp"
+        android:background="#3379C5"
+        android:backgroundTintMode="src_in"
+        android:drawableTint="#9E3D3D"
+        android:foregroundTint="#B12828"
+        android:gravity="center"
+        android:lineSpacingExtra="60sp"
+        android:text="Tela de Cadastro"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#CD6161"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoasVindas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtBoasVindas"
+        app:srcCompat="@drawable/sharp_account_box_24"
+        tools:srcCompat="@drawable/sharp_account_box_24" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-250dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoasVindas"
+        app:layout_constraintVertical_bias="0.533">
+
+        <EditText
+            android:id="@+id/txtNomeCadastro"
+            android:layout_width="355dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Nome:"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtSenhaCadastro"
+            android:layout_width="355dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="Senha:"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/txtCidadeCadastro"
+            android:layout_width="355dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Cidade de atuação:"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancelarCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8A3939"
+        android:backgroundTint="#D6A9A9"
+        android:gravity="center"
+        android:text="Cancelar"
+        android:textColor="#F6F6F6"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <Button
+        android:id="@+id/btnCadastrarCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8A3939"
+        android:backgroundTint="#D6A9A9"
+        android:gravity="center"
+        android:text="Cadastrar"
+        android:textColor="#FDFDFD"
+        app:backgroundTint="#4CAF50"
+        app:flow_firstVerticalBias="20"
+        app:flow_horizontalBias="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.227"/>
+
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agora, vamos fazer o preenchimento de poucos dados para efetuar seu cadastro!"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoasVindas"
+        app:layout_constraintVertical_bias="0.22"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

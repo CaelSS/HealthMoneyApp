@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="ARIAL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#8FB7E2"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtCadastrar"
+        android:layout_width="221dp"
+        android:layout_height="55dp"
+        android:text="Não possui uma conta? Cadastre-se"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+
+    <TextView
+        android:id="@+id/txtBoasVindas"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:height="2dp"
+        android:background="#3379C5"
+        android:backgroundTintMode="src_in"
+        android:drawableTint="#9E3D3D"
+        android:foregroundTint="#B12828"
+        android:gravity="center"
+        android:lineSpacingExtra="60sp"
+        android:text="BEM VINDO!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#CD6161"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="login"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoasVindas"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="350dp"
+        android:ems="10"
+        android:hint="senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLogin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="147dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoasVindas"
+        app:layout_constraintStart_toStartOf="@+id/txtBoasVindas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/txtPromocional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Este é o seu melhor aplicativo para gerenciar seus ganhos :)"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editLogin"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoasVindas"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/txtBoasVindas"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerfil"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/botãoEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8A3939"
+        android:backgroundTint="#D6A9A9"
+        android:textColor="#FDFDFD"
+        android:text="Entrar"
+        app:backgroundTint="#4CAF50"
+        app:iconTint="#CA2222"
+        app:layout_constraintBottom_toTopOf="@+id/txtCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha"
+        app:layout_constraintVertical_bias="0.422"
+        app:rippleColor="#C12222" />
+
+    <Button
+        android:id="@+id/botãoSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8A3939"
+        android:backgroundTint="#D6A9A9"
+        android:foregroundTint="#FF0505"
+        android:text="Sair"
+        android:textColor="#FFFEFE"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/txtCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toEndOf="@+id/botãoEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha"
+        app:layout_constraintVertical_bias="0.422" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });*/
 
-        //CAPTURO OS COMPONENTES DA TELA MAIN
+        //CAPTURO OS COMPONENTES DA TELA MAIn
 
         txtCadastrar = findViewById(R.id.txtCadastrar);
         editLogin = findViewById(R.id.editLogin);

@@ -15,6 +15,7 @@
         android:layout_width="221dp"
         android:layout_height="55dp"
         android:text="Não possui uma conta? Cadastre-se"
+        android:background="?attr/selectableItemBackground"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
